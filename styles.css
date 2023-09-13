@@ -66,6 +66,7 @@ body{
 
 .hero button:hover{
   background-color: white;
+  color:#3882F6;
 }
 
 .hero button:active{
@@ -73,19 +74,29 @@ body{
 }
 
 fieldset{
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   text-align: left;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 8px;
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .card-group {
-    flex-direction: column;
-    gap: 18px;
+@media screen and (max-width: 600px) {
+  .hero-image {
+    padding: 0;
+  }
+
+  .hero-text{
+    padding: 12px;
   }
 }
 
