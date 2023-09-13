@@ -1,0 +1,97 @@
+*{
+  font-family: Roboto, sans-serif;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+body{
+  margin: 0;
+  text-align: center;
+}
+
+.header{
+  background-color: #1F2937;
+  color: white;
+}
+
+.hero-image{
+  background-image: url(Image/ivan-nieto--RB_vGPpaeY-unsplash.jpg);
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0px 300px 0px 300px;
+  height: auto;
+}
+
+.hero{
+  height: inherit;
+  width: inherit;
+  padding: 50px;
+}
+
+.hero-text{
+  background-color: #1F2937;
+  padding: 48px 48px 24px 48px;
+  border-radius: 16px;
+  margin-left: auto; 
+  margin-right: 0;
+}
+
+.hero-text h1{
+  color: #3882F6;
+  font-style: italic;
+  font-size:48px;
+}
+
+.hero-title{
+  font-size:48px;
+}
+
+.hero button{
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #3882F6;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  padding: 8px;
+  padding-left: 36px;
+  padding-right: 36px;
+  margin: 24px;
+}
+
+.hero button:hover{
+  background-color: white;
+}
+
+.hero button:active{
+  background-color: #3882F6;
+}
+
+fieldset{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .card-group {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+
+.footer{
+  background-color: #1F2937;
+  text-align: center;
+  color: white;
+  padding: 16px;
+}
